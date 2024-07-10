@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
+    <title>Desafío - Encriptador/Desencriptador</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header>
+        <a href="#">
+            <img src="./assets/logo.svg" alt="Logo de alura" class="header__logo">
+        </a>
+    </header>
+    <main>
+        <section class="section__datos">
+            <textarea class="texto__ingresado" id="texto" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="texto__error">
+                <img src="./assets/ico_info.svg" alt="Mensaje error" class="imagen__error">
+                <p class="texto__mensaje__error">Solo letras minúsculas y sin tildes</p>
+            </div>
+            <div class="contenedor__botones">
+                <button class="boton__encriptar" onclick="encriptar()">Encriptar</button>
+                <button class="boton__desencriptar"onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="section__resultado">
+            <div class="contenedor__resultado" id="contenedor_resultado">
+                <img src="./assets/muñeco.svg" alt="Acá va el resultado" class="imagen__muneco">
+                <p class="texto__resultado__1" id="texto_resultado_1">Ningún mensaje fue encontrado</p>
+                <p class="texto__resultado__2" id="texto_resultado_2">Ingrese el texto que desea encriptar o desencriptar</p>
+            </div>
+            <textarea class="texto__resultado" id="texto_encriptado" readonly></textarea>
+            <button id="boton_copiar" class="boton__copiar" onclick="copiar()">Copiar</button>
+        </section>
+
+    </main>
+    <footer>
+        <p class="footer__copyright">&copy; copyright 2024. Encriptador/Desencriptador de Texto. Desarrollado por Omer Solís. Todos los derechos reservados.</p>
+        <a href="https://www.linkedin.com/in/omer-sol%C3%ADs-6b46664a/"><img src="./assets/linkedin.svg" class="footer__linkedin"></a>
+        <a href="https://github.com/OmerSolis/desafioAluraOracleOne"><img src="./assets/github.svg" class="footer__github"></a>
+    </footer>
+
+    <script src="./js/funciones.js"></script>
+
+ 
+</body>
+</html>

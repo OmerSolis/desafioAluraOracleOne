@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    height: 100%;
+    font-family: "Inter", sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    position: absolute;
+  /*  padding: 2% 0% 0% 15%; */  
+}
+
+.header__logo {
+    display: flex;
+    align-items: flex-start;
+    width: 120px;
+    height: 48px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.section__datos {   
+    width: 60%;
+    margin: 168px 0px 0px 140px;
+    background: transparent;
+}
+
+.texto__ingresado {
+    width: 577px;
+    height: 300px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    outline: none;
+    border: 1px solid #0A3871;
+    border-radius: 15px;
+    resize: none;
+}
+
+.texto__ingresado::placeholder,:focus {
+    color: #0A3871;
+}
+
+.texto__error {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+    position: absolute;
+    top: 500px;
+}
+
+.texto__mensaje__error {
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: gray;
+    font-family: "Inter", sans-serif;
+}
+
+.contenedor__botones {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    position: absolute;
+    top: 526px; 
+}
+/* #67808E medium gray */
+
+.boton__encriptar {
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    background-color: #0A3871;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #E5E5E5;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+}
+
+.boton__desencriptar {
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    background-color:#D8DFE8;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+}
+
+.section__resultado {
+    width: 270px; 
+    height: 580px ;
+    background-color: #E5E5E5;
+    box-shadow: 10px 24px 24px -8px gray;
+    position: relative;
+    margin-top: 40px;
+    border-radius: 32px;
+    text-align: center;
+}
+
+.contenedor__resultado {
+    width: 250px;
+    margin: auto;
+    margin-top: 50%;
+    background-color: #E5E5E5;
+}
+
+.imagen__muneco {
+    background-color: #E5E5E5;
+}
+
+
+.texto__resultado__1 {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    font-family: "Inter", sans-serif;
+    line-height: 120%;
+    text-align: center;
+    background: #E5E5E5;
+    color: #343A40;
+}az
+
+.texto__resultado__2 {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+    background: #E5E5E5;
+}
+
+.texto__resultado {
+    width: 100%;
+    height: 485px;
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color:  #495057;
+    background-color: transparent;
+    border-top-right-radius: 32px;
+    border-top-left-radius: 32px;
+    border: none;
+    resize: none;
+}
+
+.texto__resultado:focus {
+    outline: none;
+}
+
+.boton__copiar {
+    width: 224px;
+    height: 67px;
+    margin: 23px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden; 
+    padding: 24px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    background-color: lightblue;
+    border: 1px solid #0A3871;
+    border-radius: 20px;
+}
+
+.boton__encriptar:hover, 
+  .boton__desencriptar:hover, 
+     .boton__copiar:hover {
+        transform: scale(0.95);
+     }
+
+
+footer {
+    margin-top: 15px;
+    padding: 10px;
+    height: 5px;
+    border-top: 2px solid #FFFFFF;
+    color:  #495057;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.footer__linkedin:hover {
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+
+.footer__github:hover {
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+
+@media(max-width: 1250px) {
+
+        main {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+
+        .section__datos {
+            width: 100%;
+            margin: 168px 0px 0px 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .contenedor__botones {
+            display: flex;
+            align-items: center;
+            position: inherit;
+        }
+
+        .texto__error {
+            position: inherit;
+            margin: 15px;   
+        }
+
+        .section__resultado {
+            width: 665px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .contenedor__resultado {
+            width: 100%;
+            position: absolute;
+            display: block;
+            justify-content: center;
+            align-items: center;
+            bottom: 20%;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .imagen__muneco {
+            display: none;
+        }
+
+        .boton__copiar {
+            width: 100%;
+            position: inherit;
+        }
+
+        .texto__resultado__1 {
+            font-weight: 700;
+            font-style: normal;
+            font-size: 20px;
+        }
+
+        .texto__resultado__2 {
+            font-weight: 400;
+            font-style: normal;
+            font-size: 14px;
+        }
+
+        .texto__resultado {
+            width: 100%;
+            height: 210px ;
+            padding: 10px;
+        }
+}
+
+@media(max-width: 720px) {
+
+        .header__logo {
+            width: 100px;
+            background-color: #FFFFFF;
+            padding: 2px;
+        }
+
+        .texto__ingresado {
+            width: 90%;
+            font-size: 20px;
+        }
+
+        .contenedor__botones {
+            display: grid;
+            gap: 21px;
+        }
+
+        .section__resultado {
+            width: 90%;
+        }
+
+        .footer__copyright {
+            font-size: 15px;
+        }
+}
